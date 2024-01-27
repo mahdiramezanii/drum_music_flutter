@@ -40,15 +40,15 @@ Widget ClickScrean() {
             Expanded(
                 child: TextButton(
                     onPressed: () {
-                      final player = AudioPlayer();
-                      player.play(AssetSource('assets_h1.wav'));
+                      
+                      play_sound('assets_h1.wav');
                     },
                     child: Text(""))),
             Expanded(
                 child: TextButton(
                     onPressed: () {
-                      final player = AudioPlayer();
-                      player.play(AssetSource('assets_k1.wav'));
+                     
+                      play_sound('assets_k1.wav');
                     },
                     child: Text(""))),
           ],
@@ -61,15 +61,15 @@ Widget ClickScrean() {
             Expanded(
                 child: TextButton(
                     onPressed: () {
-                      final player = AudioPlayer();
-                      player.play(AssetSource('assets_k2.wav'));
+                     
+                      play_sound('assets_k2.wav');
                     },
                     child: Text(""))),
             Expanded(
                 child: TextButton(
                     onPressed: () {
-                      final player = AudioPlayer();
-                      player.play(AssetSource('assets_c1.wav'));
+                    
+                      play_sound('assets_c1.wav');
                     },
                     child: Text(""))),
           ],
