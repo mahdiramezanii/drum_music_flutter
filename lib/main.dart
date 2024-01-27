@@ -80,16 +80,27 @@ Widget ClickScrean() {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(
-                child: TextButton(
-                    onPressed: () {
-                      final player = AudioPlayer();
-                      player.play(AssetSource('assets_c2.wav'));
-                    },
-                    child: Text(""))),
-            Expanded(child: TextButton(onPressed: () {}, child: Text(""))),
+              child: TextButton(
+                onPressed: () {
+                  play_sound('assets_c2.wav');
+                },
+                child: Text(""),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {},
+                child: Text(""),
+              ),
+            ),
           ],
         ),
       ),
     ],
   );
+}
+
+play_sound(String sound) {
+  final player = AudioPlayer();
+  player.play(AssetSource(sound));
 }
